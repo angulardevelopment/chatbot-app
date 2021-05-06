@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "chat-bot"
+  "defaultProject": "chat-bot",
+  "cli": {
+    "analytics": false
+  }
 }
