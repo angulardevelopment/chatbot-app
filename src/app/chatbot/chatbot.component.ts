@@ -20,6 +20,7 @@ export class ChatbotComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('hi')
   }
 
 }
