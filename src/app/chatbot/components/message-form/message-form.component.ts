@@ -1,11 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Message } from '../../models';
 import { DialogflowService } from '../../services';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'message-form',
   templateUrl: './message-form.component.html',
-  styleUrls: ['./message-form.component.scss']
+  styleUrls: ['./message-form.component.scss'],
+    standalone: true,
+  imports: [FormsModule]
 })
 export class MessageFormComponent implements OnInit {
 

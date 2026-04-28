@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Message } from './models';
+import { MessageFormComponent, MessageListComponent } from './components';
 
 @Component({
   selector: 'app-chatbot',
   templateUrl: './chatbot.component.html',
-  styleUrls: ['./chatbot.component.css']
+  styleUrls: ['./chatbot.component.css'],
+    standalone: true,
+  imports: [MessageListComponent, MessageFormComponent]
 })
 export class ChatbotComponent implements OnInit {
 

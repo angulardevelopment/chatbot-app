@@ -1,5 +1,7 @@
 <div class="chatlist" #chatlist>
   <ul class="list-group">
-    <message-item *ngFor="let msg of messages" [message]="msg"></message-item>
+    @for (msg of messages; track msg) {
+      <message-item [message]="msg"></message-item>
+    }
   </ul>
 </div>

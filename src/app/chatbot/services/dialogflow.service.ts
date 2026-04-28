@@ -1,8 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { map } from 'rxjs/operators';
-@Injectable()
+import { environment } from '../../../environments/environment';
+@Injectable({ providedIn: 'root' })
 export class DialogflowService {
 
   private baseURL = 'https://api.dialogflow.com/v1/query?v=20150910';
